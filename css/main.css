@@ -1,0 +1,615 @@
+.body {
+	/*background-color: red;*/
+	font-family: Arial, sans-serif;
+	
+}
+
+.titre {
+	display:flex;
+	width:100%;
+	/*height:10vh;*/
+	/*border-style:solid;
+	border-width: 3px;
+	border-color: red;*/
+	justify-content:space-between;
+	
+}
+
+.corps{
+	display:flex;
+	width:100%;
+	flex-wrap: wrap;
+	justify-content:space-around;
+	align-items:center;
+	font-family: Arial, sans-serif;
+	}
+
+.start{
+	/*position: fixed;*/
+	background: #9f85ff;
+	padding-bottom: 50px;
+	margin:-10px;
+	height:100%;
+}	
+
+
+
+.startAdm{
+	background: #9f85ff;
+	padding-bottom: 20px;
+	margin:-10px;
+	height:2000px;
+}	
+
+.corpsstart{
+	display:flex;
+	width:100%;
+	height:100%;
+	
+	flex-wrap: wrap;
+	justify-content:space-around;
+	align-items:center;
+	/*border:5px solid darkcyan;*/
+	/*height:100vh;*/
+	font-family: Arial, sans-serif;
+	}
+
+.txtInput {
+	font-size: 1.2em;
+	color:Indigo;
+}
+
+.TitreAdmin {
+font-size:1.4em; 
+color:white; 
+font-weight: bold;	
+}
+
+.TitreAdmin2 {
+font-size:1em; 
+color:white; 
+/*font-weight: bold;*/	
+}	
+
+.TitreAdmin3 {
+font-size:3em; 
+color:Indigo; 
+font-weight: bold;	
+}
+
+.TitreAdmin4 {
+font-size:1.3em; 
+color:white; 
+font-weight: bold;	
+}	
+
+.corpsAjoutQuest{
+display:flex;
+width:100%;
+/*height:30%;*/
+
+flex-wrap: wrap;
+justify-content:space-around;
+align-items:center;
+/*border:5px solid darkcyan;*/
+/*height:100vh;*/
+font-family: Arial, sans-serif;
+}		
+
+.content {
+
+  align-content: center;
+}	
+
+.submitstart{
+	-webkit-appearance: none;
+	padding:10px 25px; 
+    background:Indigo;
+    font-weight:bold;
+    font-size:1em;
+    color:white; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+.submitstartbis{
+	-webkit-appearance: none;
+	padding:10px 25px; 
+    background:green;
+    font-weight:bold;
+    font-size:1em;
+    color:white; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+
+
+.submitstartbis{
+	-webkit-appearance: none;
+	padding:10px 25px; 
+	width:200px;
+    background:DarkCyan;
+    font-weight:bold;
+    font-size:1em;
+    color:white; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+.submitstart2{
+	-webkit-appearance: none;
+	padding:10px ;
+	width:200px; 
+    background:Indigo;
+    font-weight:bold;
+    font-size:1em;
+    color:white; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+.submitstart22{
+	-webkit-appearance: none;
+	padding:10px ; 
+    background:green;
+    font-weight:bold;
+    font-size:1em;
+    color:white; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+.submitstart2bis{
+	-webkit-appearance: none;
+	padding:10px 30px 10px 30px ; 
+    background:red;
+    font-weight:bold;
+    font-size:1em;
+    color:white; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    width:250px; 
+}
+
+.submitstart3{
+	-webkit-appearance: none;
+	padding:10px ; 
+    background:green;
+    font-weight:bold;
+    font-size:0.7em;
+    color:white; 
+    border: none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 20px; 
+}
+
+.submitstart3bis{
+	-webkit-appearance: none;
+	padding:7px ; 
+    background:Indigo;
+    font-weight:bold;
+    font-size:0.7em;
+    color:white; 
+    border: none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}								
+
+.submitstart4{
+	-webkit-appearance: none;
+	padding:10px ; 
+    background:red;
+    font-weight:bold;
+    font-size:0.7em;
+    color:white; 
+    border: none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 20px; 
+}
+
+.submitstart-5{
+	-webkit-appearance: none;
+	padding:10px ; 
+    background:green;
+    font-weight:bold;
+    font-size:0.7em;
+    color:white; 
+    border: none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: -15px;
+}	
+.submitstart-6{
+	-webkit-appearance: none;
+	padding:10px ; 
+    background:red;
+    font-weight:bold;
+    font-size:0.7em;
+    color:white; 
+    border: none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: -15px;
+}			
+
+.submitstart-7{
+	-webkit-appearance: none;
+	padding:7px ; 
+    background:#3d7eff;
+    font-weight:bold;
+    font-size:1em;
+    color:Indigo; 
+    border: none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: -15px;
+}
+
+.submitstart-8{
+	-webkit-appearance: none;
+	padding:7px ; 
+    background:#ff576a;
+    font-weight:bold;
+    font-size:1em;
+    color:Indigo; 
+    border: none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: -15px;
+}
+
+.submitstart-9{
+	-webkit-appearance: none;
+	padding:7px ;
+	width:80px; 
+    background:#3d7eff;
+    font-weight:bold;
+    font-size:0.7em;
+    color:Indigo; 
+    border: none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: -15px;
+}									
+
+
+.corps2 {
+	display:flex;
+	width:100%;
+	background: bisque;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content:space-around;
+	align-items:center;
+	/*border:5px solid darkcyan;*/
+	/*height:100vh;*/
+	font-family: Arial, sans-serif;
+}
+
+.corpstxt{
+	display:flex;
+	flex-direction: column;
+	/*width:80%;*/
+	/*background: bisque;*/
+	flex-wrap: wrap;
+	justify-content:space-around;
+	align-items:center;
+	/*border:5px solid darkcyan;*/
+	/*height:100vh;*/
+	font-family: Arial, sans-serif;
+}
+
+
+.centretext{
+	display: flex;
+	flex-direction: column;
+  	justify-content: center;
+  	text-align: center;
+
+}
+
+.responsiveimgs{
+	width: 100%;
+    height: auto;
+    margin:10px;
+
+}
+
+.boutton{
+	-webkit-appearance: none;
+	border: none;
+	border-radius:25px;
+    /*color: white;*/
+    font-weight: bold;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.boutlisteAdm{
+		background: Indigo;
+		/*border: 2px solid blue;*/
+		border-radius:10px;
+		width:100%;
+		height:40px;
+		line-height: 40px;
+		text-align:center;
+		text-decoration:none;
+		font-size: 1.3em;
+		font-weight: bold;
+		color:white;
+		/*justify-content: center;*/
+  		/*display: table-cell;
+    	vertical-align: middle*/
+	}
+
+.boutlisteQuest{
+		background: Indigo;
+		/*border: 2px solid blue;*/
+		border-radius:10px;
+		padding: 5px;
+		width:100%;
+		min-height: 40px;
+		/*height:40px;*/
+		line-height: 40px;
+		text-align:center;
+		text-decoration:none;
+		font-size: 1.3em;
+		font-weight: bold;
+		color:white;
+		/*justify-content: center;*/
+  		/*display: table-cell;
+    	vertical-align: middle*/
+	}
+
+.boutsubmitAdm{
+		background: #d557ff;
+		border: 2px solid Indigo;
+		border-radius:15px;
+		width:50%;
+		height:40px;
+		line-height: 40px;
+		text-align:center;
+		text-decoration:none;
+		font-size: 1.3em;
+		font-weight: bold;
+		color:white;
+		/*justify-content: center;*/
+  		/*display: table-cell;
+    	vertical-align: middle*/
+	}
+
+
+@media screen and (max-width: 6025px) {  /*Pour Tablettes et PC*/
+
+	.box{
+		display:flex;
+		flex-wrap: wrap;
+		/*background: blueviolet;*/
+		justify-content: center;
+		/*align-content:space-around;	*/
+		width:40%;
+		height:35%;
+		margin:10px;
+		border-radius:15px;
+
+		/*max-width:300px;*/
+	}
+
+	.boxtxt{
+		display:flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		/*background: blueviolet;*/
+		justify-content: top;
+		a/*lign-content:space-around;*/	
+		width:50%;
+		/*height:40%;*/
+		margin:5px;
+		/*max-width:300px;*/
+	}
+
+	.soustitre{
+		font-size: 3vw;
+		color:white;
+		width:100%;
+		align-self: flex-start;
+		margin: 5px;
+	}	
+
+	.sizetxtbout{
+		font-size: 1.5vw;
+	}
+
+	.logo {
+		text-align: center;
+		font-size: 2em;
+		/*background-color: blue;*/
+		width: 100%;
+    	height: auto;
+    	max-width: 120px;
+	}
+
+	.logoAdm {
+		text-align: center;
+		font-size: 2em;
+		/*background-color: blue;*/
+		width: 100%;
+    	height: auto;
+    	max-width: 200px;
+	}
+
+	.nomOp {
+		display: flex;
+  		justify-content: center;
+  		flex-direction: column;
+  		font-family: Arial, sans-serif;
+  		text-align: center;
+		text-align: right;
+		/*background-color: green;*/
+		font-size: 4vw;
+	}
+	.nomOpAdm {
+		display: flex;
+  		justify-content: center;
+  		flex-direction: column;
+  		font-family: Arial, sans-serif;
+  		text-align: right;
+  		margin-right: 40px;
+  		color:Indigo;
+  		font-weight: bold;
+		/*text-align: right;*/
+		/*background-color: green;*/
+		font-size: 1.5vw;
+	}
+
+	.milieuAdm {
+		display: flex;
+  		justify-content: center;
+  		flex-direction: column;
+  		font-family: Arial, sans-serif;
+  		text-align: center;
+  		color:white;
+		/*text-align: right;*/
+		/*background-color: green;*/
+		font-size: 4vw;
+
+	}
+
+	.bouton{
+		background: Indigo;
+		border: 2px solid white;
+		border-radius:15px;
+		width:70%;
+		height:20%;
+		color:white;
+		/*justify-content: center;*/
+  		/*display: table-cell;
+    	vertical-align: middle*/
+	}
+}
+
+
+@media screen and (max-width: 600px) {  /*Pour Iphone*/
+
+	.box{
+		display:flex;
+		flex-wrap: wrap;
+		/*background: blueviolet;*/
+		justify-content: center;
+		/*align-content:space-around;	*/
+		width:80%;
+		height:30%;
+		margin:20px;
+		border-radius:15px;
+		/*max-width:300px;*/
+	}
+	
+	.boxtxt{
+		display:flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		/*background: blueviolet;*/
+		justify-content: left;
+		/*align-content:space-around;	*/
+		width:100%;
+		/*height:40%;*/
+		margin:10px;
+		/*max-width:300px;*/
+	}
+
+	.input{
+		width:100%;
+		font-size: 5vw;
+
+	}
+
+	.soustitre{
+		font-size: 9vw;
+		width:100%;
+		align-self: flex-start;
+	}
+
+	.sizetxtbout{
+		font-size: 5vw;
+	}
+
+	.logo {
+		text-align: center;
+		/*background-color: blue;*/
+		width: 100%;
+    	height: auto;
+		max-width: 80px;
+	}
+
+	.nomOp {
+		display: flex;
+  		justify-content: center;
+  		flex-direction: column;
+  		font-family: Arial, sans-serif;
+  		text-align: center;
+		text-align: right;
+		/*background-color: green;*/
+		font-size: 3vw;
+	}
+
+	.bouton{
+		background: Indigo;
+		border: 2px solid white;
+		border-radius:15px;
+		width:50%;
+		height:13%;
+		color:white;
+		/*justify-content: center;*/
+  		/*display: table-cell;
+    	vertical-align: middle*/
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
