@@ -22,7 +22,7 @@ $NomOpe=$row['NomOpe'];
 // sélection des propositions qui vont avec question
 $query = "SELECT * FROM Propositions  WHERE IdQuest='$IDQuest' " ;
 $result = mysqli_query($db, $query);
-$rowcount = mysqli_num_rows($result);
+$rowcountprop = mysqli_num_rows($result);
 $ArrIdProp=array();
 $ArrBonRep=array();
 
@@ -44,29 +44,36 @@ $query = "SELECT * FROM votesms  WHERE numtel='$numvotant' AND idQuestsms='$IDQu
 $result = mysqli_query($db, $query);
 $rowcountsms = mysqli_num_rows($result);
 
+// contrôle pour que l'entrée ne soit qu'un n° ET limité au nbr de prop
+$valid=preg_match("/[0-$rowcountprop]/", $repquiz);
+if (!$valid) {
+   die("");
+} else {
+
 if ($rowcountsms==0) {
 
-// boucle pour assigner les valeurs afin de les insérer ensuite
-	for ($x = 0; $x <= $rowcount; $x++) {
-	    if ($repquiz==$x) {
-	    $repquiz="P".($x);
-		$BonneRep=$ArrBonRep[($x-1)];
-		$IdProp=$ArrIdProp[($x-1)];
-		}
-	 }
+	// boucle pour assigner les valeurs afin de les insérer ensuite
+		for ($x = 0; $x <= $rowcountprop; $x++) {
+		    if ($repquiz==$x) {
+		    $repquiz="P".($x);
+			$BonneRep=$ArrBonRep[($x-1)];
+			$IdProp=$ArrIdProp[($x-1)];
+			}
+		 }
 
-	// enregistrement de la reponse dans Reponses		
-	$sql = "INSERT INTO Reponses (NomOpe, IDQuest, IdProp, Reponse, BonRep) VALUES ('$NomOpe', '$IDQuest','$IdProp', '$repquiz', '$BonneRep')";
-			if ($db -> query($sql) === FALSE) {
-					echo "Une erreur est survenue, veuillez nous en excuser" . $sql . "<br>" . $db -> error;
-				} 
-	// enregistrement de la reponse dans votesms
-	$sql = "INSERT INTO votesms (numtel, idQuestsms) VALUES ('$numvotant','$IDQuest')";
-			if ($db -> query($sql) === FALSE) {
-					echo "Une erreur est survenue, veuillez nous en excuser" . $sql . "<br>" . $db -> error;
-				} 
+		// enregistrement de la reponse dans Reponses		
+		$sql = "INSERT INTO Reponses (NomOpe, IDQuest, IdProp, Reponse, BonRep) VALUES ('$NomOpe', '$IDQuest','$IdProp', '$repquiz', '$BonneRep')";
+				if ($db -> query($sql) === FALSE) {
+						echo "Une erreur est survenue, veuillez nous en excuser" . $sql . "<br>" . $db -> error;
+					} 
+		// enregistrement de la reponse dans votesms
+		$sql = "INSERT INTO votesms (numtel, idQuestsms) VALUES ('$numvotant','$IDQuest')";
+				if ($db -> query($sql) === FALSE) {
+						echo "Une erreur est survenue, veuillez nous en excuser" . $sql . "<br>" . $db -> error;
+					} 
 
-} // fin if rowcount
+	} // fin if rowcount
+} // fin if empty
 mysqli_free_result($result);
 mysqli_close($db);
 
