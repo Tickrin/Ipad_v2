@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") { // routine pour chercher si le mdp e
 	  	} else {
 	    	$name = test_input($_POST["mdp"]);
     		// test pour n'autoriser que lettres et chiffres
-    		if (!preg_match("/^[a-zA-Z0-9 ]*$/",$name)) {
+    		if (!preg_match("/^[a-zA-Z0-9]*$/",$name)) {
       		$nameErr = "* lettres ou chiffre seulement"; 
     		}
     	}

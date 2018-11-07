@@ -19,10 +19,25 @@ if(isset($_POST["submit"])){ // routine pour chercher si le mdp existe
 
 	$mdpUtil=$_POST["mdpUtil"];
 
-	$query = "SELECT * FROM Mdp  WHERE MdpUtil='$mdpUtil' " ;
-	$result = mysqli_query($db, $query);
-	$row = mysqli_fetch_assoc($result);
-	$rowcount = mysqli_num_rows($result);
+	if (empty($_POST["mdpUtil"])) { // test s'il y a eu une entrée
+	    $nameErr = "* un code est requis";
+	  	} else {
+	    	$name = test_input($_POST["mdpUtil"]);
+    		// test pour n'autoriser que lettres et chiffres
+    		if (!preg_match("/^[a-zA-Z0-9]*$/",$name)) {
+      		$nameErr = "* lettres ou chiffre seulement"; 
+    		}
+    	}
+    // prepared statement
+	$query = "SELECT MdpUtil, NomOpe FROM Mdp  WHERE MdpUtil='$mdpUtil' " ;
+	$stmt = $db->prepare($sql);
+	$stmt->bind_param("s", $mdpUtil);
+	// set parameters and execute
+	$stmt->execute();
+	$stmt->store_result(); 
+	$rowcount = $stmt->num_rows();
+	$stmt->bind_result($mdpUtil, $NomOpe);
+	
 	$op=$row["NomOpe"];
 
 	if($rowcount==1 AND $op!="Sollea"){ // si la fiche existe on créée cookie pour nommer la base par defaut
@@ -42,6 +57,13 @@ if(isset($_POST["submit"])){ // routine pour chercher si le mdp existe
 		 mysqli_free_result($result);
 		 mysqli_close($db);
 }
+// fonction pour valider les entrées
+function test_input($data) {
+  		$data = trim($data);
+  		$data = stripslashes($data);
+  		$data = htmlspecialchars($data);
+  		return $data;
+		}
 ?>
 
 <head>
